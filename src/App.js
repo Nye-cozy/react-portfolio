@@ -21,7 +21,7 @@ import Particles from "react-particles-js";
 import { particlesOptions } from "./particlesOption";
 
 const App = () => {
-  //second 체크
+  //second 체크하자
   return (
     <div className="App" style={{ position: "relative" }}>
       <MyNavbar />
