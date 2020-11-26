@@ -13,6 +13,7 @@ import Slide from "react-reveal/Slide";
 import csss from './assets/img/parallex/background.webp'
 import Skills from './pages/skills/skills.component'
 import Experience from './pages/experience/experience.component';
+import ProjectTimeLine from './components/projects-timeline/projects-timeline.components';
 
 const App = () => {
   //second 체크
@@ -65,6 +66,8 @@ const App = () => {
           </Slide>
         </Container>
       </div>
+      {/* Project TimeLine */}
+      <ProjectTimeLine />
     </div>
   );
 }
