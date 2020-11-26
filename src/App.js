@@ -12,6 +12,7 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import csss from './assets/img/parallex/background.webp'
 import Skills from './pages/skills/skills.component'
+import Experience from './pages/experience/experience.component';
 
 const App = () => {
   //second 체크
@@ -54,6 +55,15 @@ const App = () => {
             </Container>
           </div>
         </Parallax>
+      </div>
+      {/* experience section */}
+      <div>
+        <Container className="container-box rounded">
+          <Slide bottom duration={500}>
+            <hr />
+            <Experience />
+          </Slide>
+        </Container>
       </div>
     </div>
   );
