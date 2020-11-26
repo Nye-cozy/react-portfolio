@@ -14,6 +14,11 @@ import csss from './assets/img/parallex/background.webp'
 import Skills from './pages/skills/skills.component'
 import Experience from './pages/experience/experience.component';
 import ProjectTimeLine from './components/projects-timeline/projects-timeline.components';
+import ContactForm from './pages/contact-form/contact-form.component';
+import FooterPanel from './components/footer/footer.component';
+
+import Particles from "react-particles-js";
+import { particlesOptions } from "./particlesOption";
 
 const App = () => {
   //second 체크
@@ -22,6 +27,10 @@ const App = () => {
       <MyNavbar />
       <MyCarousal />
       <TitleMessage />
+      <Particles
+        className="particles particles-box"
+        params={particlesOptions}
+      />
       {/* About me Section */}
       <div>
         <Parallax
@@ -42,33 +51,45 @@ const App = () => {
 
       {/* skills section */}
       <div>
-        <Parallax
-          blur={{ min: -30, max: 30 }}
-          bgImage={csss}
-          bgImageAlt=""
-          strength={-200}
-        >
-          <div>
-            <Container className="container-box rounded">
-              <Fade duration={500}>
-                <Skills />
-              </Fade>
-            </Container>
-          </div>
-        </Parallax>
-      </div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <Skills />
+          </Fade>
+        </Container>
+      </div >
+
       {/* experience section */}
-      <div>
+      < div >
         <Container className="container-box rounded">
           <Slide bottom duration={500}>
             <hr />
             <Experience />
           </Slide>
         </Container>
-      </div>
+      </div >
+
       {/* Project TimeLine */}
-      <ProjectTimeLine />
-    </div>
+      < div >
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+            <ProjectTimeLine />
+          </Fade>
+        </Container>
+      </div >
+
+      {/* Contact */}
+      < div >
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+            <ContactForm />
+          </Fade>
+        </Container>
+      </div >
+      <hr />
+      <FooterPanel />
+    </div >
   );
 }
 
