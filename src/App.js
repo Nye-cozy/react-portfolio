@@ -11,7 +11,7 @@ import { Parallax } from "react-parallax";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import csss from './assets/img/parallex/background.webp'
-
+import Skills from './pages/skills/skills.component'
 
 const App = () => {
   //second 체크
@@ -32,6 +32,24 @@ const App = () => {
             <Container className="container-box rounded">
               <Fade duration={500}>
                 <About />
+              </Fade>
+            </Container>
+          </div>
+        </Parallax>
+      </div>
+
+      {/* skills section */}
+      <div>
+        <Parallax
+          blur={{ min: -30, max: 30 }}
+          bgImage={csss}
+          bgImageAlt=""
+          strength={-200}
+        >
+          <div>
+            <Container className="container-box rounded">
+              <Fade duration={500}>
+                <Skills />
               </Fade>
             </Container>
           </div>
