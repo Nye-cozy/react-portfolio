@@ -14,7 +14,7 @@ import csss from './assets/img/parallex/background.webp'
 
 
 const App = () => {
-  //cozynyesdfsdf
+  //second 체크
   return (
     <div className="App" style={{ position: "relative" }}>
       <MyNavbar />
